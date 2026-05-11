@@ -1,3 +1,7 @@
+## 🔗 Links
+
+- 🌐 Live Website: https://thumbnail-poster-portfolio.vercel.app
+
 # 🎨 Animated Thumbnail & Poster Portfolio
 
 A modern cinematic portfolio website for thumbnail and poster designers built with Next.js, GSAP, TypeScript, and Tailwind CSS.
