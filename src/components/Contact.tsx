@@ -10,14 +10,13 @@ import gsap from "gsap";
 import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export default function ContactSection() {
+export default function ContactPage() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     if (!sectionRef.current) return;
 
     const ctx = gsap.context(() => {
-      // Prevent blank screen on refresh
       gsap.set(
         [
           ".contact-subtitle",
@@ -96,7 +95,7 @@ export default function ContactSection() {
         py-24
       "
     >
-      {/* Background Blur */}
+      {/* BACKGROUND BLUR */}
       <div
         className="
           absolute
@@ -121,7 +120,7 @@ export default function ContactSection() {
           text-center
         "
       >
-        {/* Subtitle */}
+        {/* SUBTITLE */}
         <p
           className="
             contact-subtitle
@@ -136,7 +135,7 @@ export default function ContactSection() {
           Contact
         </p>
 
-        {/* Heading */}
+        {/* TITLE */}
         <h2
           className="
             contact-title
@@ -155,7 +154,7 @@ export default function ContactSection() {
           </span>
         </h2>
 
-        {/* Description */}
+        {/* DESCRIPTION */}
         <p
           className="
             contact-text
@@ -168,12 +167,14 @@ export default function ContactSection() {
             mb-14
           "
         >
-          Available for thumbnail design, poster projects,
-          creative collaborations, and digital visual work.
-          Reach out through Instagram or email.
+          Available for thumbnail design,
+          poster projects, creative
+          collaborations, and digital visual
+          work. Reach out through Instagram
+          or email.
         </p>
 
-        {/* Cards */}
+        {/* CARDS */}
         <div
           className="
             grid
@@ -182,9 +183,9 @@ export default function ContactSection() {
             gap-6
           "
         >
-          {/* Instagram */}
+          {/* INSTAGRAM CARD */}
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/fkdesigner09/"
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -199,15 +200,13 @@ export default function ContactSection() {
               backdrop-blur-xl
               p-8
               shadow-xl
-
               hover:-translate-y-2
               hover:shadow-2xl
-
               transition-all
               duration-500
             "
           >
-            {/* Hover Glow */}
+            {/* HOVER GLOW */}
             <div
               className="
                 absolute
@@ -223,6 +222,7 @@ export default function ContactSection() {
             />
 
             <div className="relative z-10">
+              {/* ICON */}
               <div
                 className="
                   w-16
@@ -234,7 +234,6 @@ export default function ContactSection() {
                   justify-center
                   mx-auto
                   mb-6
-
                   group-hover:scale-110
                   transition-transform
                   duration-500
@@ -242,12 +241,11 @@ export default function ContactSection() {
               >
                 <FaInstagram
                   size={30}
-                  className="
-                    text-[#A47251]
-                  "
+                  className="text-[#A47251]"
                 />
               </div>
 
+              {/* TITLE */}
               <h3
                 className="
                   text-2xl
@@ -258,23 +256,29 @@ export default function ContactSection() {
                 Instagram
               </h3>
 
+              {/* TEXT */}
               <p
                 className="
                   text-sm
                   text-gray-600
                   mb-5
+                  leading-relaxed
                 "
               >
-                Explore more creative work and connect
+                Explore more creative
+                projects, thumbnails,
+                posters, and connect
                 directly through Instagram.
               </p>
 
+              {/* USERNAME */}
               <span
                 className="
                   text-xs
                   uppercase
                   tracking-[0.2em]
                   text-[#A47251]
+                  font-semibold
                 "
               >
                 @fkdesigner09
@@ -282,9 +286,9 @@ export default function ContactSection() {
             </div>
           </a>
 
-          {/* Email */}
+          {/* EMAIL CARD */}
           <a
-            href="mailto:your@email.com"
+            href="mailto:fk5842841@email.com"
             className="
               contact-card
               group
@@ -297,15 +301,13 @@ export default function ContactSection() {
               backdrop-blur-xl
               p-8
               shadow-xl
-
               hover:-translate-y-2
               hover:shadow-2xl
-
               transition-all
               duration-500
             "
           >
-            {/* Hover Glow */}
+            {/* HOVER GLOW */}
             <div
               className="
                 absolute
@@ -321,6 +323,7 @@ export default function ContactSection() {
             />
 
             <div className="relative z-10">
+              {/* ICON */}
               <div
                 className="
                   w-16
@@ -332,7 +335,6 @@ export default function ContactSection() {
                   justify-center
                   mx-auto
                   mb-6
-
                   group-hover:scale-110
                   transition-transform
                   duration-500
@@ -340,12 +342,11 @@ export default function ContactSection() {
               >
                 <MdEmail
                   size={30}
-                  className="
-                    text-[#A47251]
-                  "
+                  className="text-[#A47251]"
                 />
               </div>
 
+              {/* TITLE */}
               <h3
                 className="
                   text-2xl
@@ -356,23 +357,29 @@ export default function ContactSection() {
                 Email
               </h3>
 
+              {/* TEXT */}
               <p
                 className="
                   text-sm
                   text-gray-600
                   mb-5
+                  leading-relaxed
                 "
               >
-                Reach out for collaborations, freelance
-                projects, and creative discussions.
+                Reach out for freelance
+                projects, collaborations,
+                brand work, and creative
+                discussions.
               </p>
 
+              {/* EMAIL */}
               <span
                 className="
                   text-xs
                   uppercase
                   tracking-[0.2em]
                   text-[#A47251]
+                  font-semibold
                 "
               >
                 fk5842841@email.com

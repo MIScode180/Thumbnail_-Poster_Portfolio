@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -146,7 +147,8 @@ export default function HeroSection() {
 
           {/* Bottom */}
           <div className="flex flex-wrap items-center gap-4 pt-10">
-            <button
+            <Link href="/allprojects" >
+                <button
               className="
                 bg-black
                 text-white
@@ -164,6 +166,7 @@ export default function HeroSection() {
             >
               View Work
             </button>
+            </Link>
 
             <p className="text-sm text-black/40 uppercase tracking-[0.25em]">
               Available Worldwide
