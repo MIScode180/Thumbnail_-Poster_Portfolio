@@ -229,7 +229,7 @@ export default function AboutPage() {
                 shadow-lg
               "
             >
-              <h3 className="text-3xl font-black">
+              <h3 className="text-2xl lg:text-3xl font-black">
                 Creative
               </h3>
 
